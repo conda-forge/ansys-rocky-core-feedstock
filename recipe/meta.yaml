@@ -1,5 +1,5 @@
 {% set name = "ansys-rocky-core" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ansys_rocky_core-{{ version }}.tar.gz
-  sha256: 7ba412d28fcebc627ed8157aa9e9128573f36e9dd04021cc270b602574ffa409
+  sha256: 584b99238cd3f3b43a5684ef7a3c9117800219074e0cfdca01550407547cc118
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - importlib-metadata >=4.0
     - pyro5 >=5.13
     - numpy >=1.19,<3.0
+    - ansys-tools-path
 
 test:
   imports:
