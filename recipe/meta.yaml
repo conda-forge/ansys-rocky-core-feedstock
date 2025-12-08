@@ -25,7 +25,7 @@ requirements:
     - importlib-metadata >=4.0
     - pyro5 >=5.13
     - numpy >=1.19,<3.0
-    - ansys-tools-path
+    - ansys-common-tools
 
 test:
   imports:
