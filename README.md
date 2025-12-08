@@ -146,6 +146,7 @@ Feedstock Maintainers
 =====================
 
 * [@Adrian-B-Moreira](https://github.com/Adrian-B-Moreira/)
+* [@femarchi](https://github.com/femarchi/)
 * [@fingeraugusto](https://github.com/fingeraugusto/)
 * [@igortg](https://github.com/igortg/)
 
