@@ -1,5 +1,5 @@
 {% set name = "ansys-rocky-core" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ansys_rocky_core-{{ version }}.tar.gz
-  sha256: eacdcc7f3749b596351ec95891f7633c730b9d4fa37ec09f6534c7cbc25ea00b
+  sha256: 73177d5c191e18f35c00209ba4aa83520d711a1eaaed0e7ad4322c7f50ca6ca4
 
 build:
   noarch: python
