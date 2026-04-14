@@ -1,5 +1,5 @@
 {% set name = "ansys-rocky-core" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ansys_rocky_core-{{ version }}.tar.gz
-  sha256: 73177d5c191e18f35c00209ba4aa83520d711a1eaaed0e7ad4322c7f50ca6ca4
+  sha256: f84e69832c9c2c43c906251e30e59fed36cd4b1b433637c53f394c2808768e64
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -25,7 +25,8 @@ requirements:
     - importlib-metadata >=4.0
     - pyro5 >=5.13
     - numpy >=1.19,<3.0
-    - ansys-tools-common >=0.3.1
+    - ansys-tools-common >=0.4.5
+    - click ==8.3.1
     - docker-py >=7.1.0
 test:
   imports:
