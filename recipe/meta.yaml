@@ -27,7 +27,6 @@ requirements:
     - numpy >=1.19,<3.0
     - ansys-tools-common >=0.4.5
     - click ==8.4.1
-    - docker-py >=7.1.0
 test:
   imports:
     - ansys.rocky.core
